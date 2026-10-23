@@ -8,7 +8,7 @@
 ```
 *(на Windows: `.\gradlew.bat :desktopApp:run`)*
 
-### 2. Запуск со второй локалью (English)
+### 2. Запуск с английской локализацией (English)
 ```bash
 ./gradlew :desktopApp:run -Plocale=en
 ```
@@ -23,12 +23,3 @@
 ./gradlew :androidApp:assembleDebug
 ```
 
-### 5. Проверка паритета строк локализации
-```bash
-python tools/check-strings.py
-```
-
-### 6. Запуск тестов
-```bash
-./gradlew :shared:jvmTest
-```
