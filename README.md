@@ -13,12 +13,22 @@
 ./gradlew :desktopApp:run -Plocale=en
 ```
 
-### 3. Проверка паритета строк локализации
+### 3. Запуск веб-приложения (Wasm)
+```bash
+./gradlew :webApp:wasmJsBrowserDevelopmentRun
+```
+
+### 4. Сборка Android-приложения
+```bash
+./gradlew :androidApp:assembleDebug
+```
+
+### 5. Проверка паритета строк локализации
 ```bash
 python tools/check-strings.py
 ```
 
-### 4. Запуск тестов
+### 6. Запуск тестов
 ```bash
 ./gradlew :shared:jvmTest
 ```
