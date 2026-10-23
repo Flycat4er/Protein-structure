@@ -3,10 +3,6 @@ package org.example.proteinstructure.ui.model
 import org.example.proteinstructure.domain.Protein
 import org.example.proteinstructure.domain.ProteinMethod
 
-/**
- * UI-модель карточки белка в списке.
- * Содержит отформатированные данные для быстрого рендеринга без обращения к доменной логике.
- */
 data class ProteinCardUi(
     val id: String,
     val name: String,

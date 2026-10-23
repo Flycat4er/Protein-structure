@@ -24,12 +24,6 @@ import org.example.proteinstructure.ui.screens.list.ProteinListScreen
 
 private const val TRANSITION_MS = 300
 
-/**
- * Хост Navigation 3 с настроенными переходами вперёд и назад.
- *
- * Критерий: «Возврат выглядит как возврат, а не как ещё один шаг вперёд:
- * заданы popTransitionSpec и predictivePopTransitionSpec, а не только прямая пара».
- */
 @Composable
 fun AppNavDisplay(
     modifier: Modifier,
@@ -43,9 +37,7 @@ fun AppNavDisplay(
         backStack = backStack,
         modifier = modifier,
         onBack = navigator::back,
-        // Прямой переход: новый экран выезжает справа налево (Start), старый уходит влево
         transitionSpec = { slide(SlideDirection.Start) },
-        // Обратный переход (POP): возвращаемый экран выезжает слева направо (End), текущий уходит вправо
         popTransitionSpec = { slide(SlideDirection.End) },
         predictivePopTransitionSpec = { slide(SlideDirection.End) },
         entryProvider = entryProvider {

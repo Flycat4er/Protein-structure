@@ -14,9 +14,6 @@ import org.example.proteinstructure.domain.ProteinRepository
 import org.example.proteinstructure.ui.model.toCardsUi
 import org.example.proteinstructure.ui.navigation.Navigator
 
-/**
- * ViewModel списка белков: управляет состоянием поиска и списком структур.
- */
 class ProteinListViewModel(
     private val navigator: Navigator,
     private val repository: ProteinRepository = ProteinRepositoryImpl(),

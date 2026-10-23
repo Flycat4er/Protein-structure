@@ -3,9 +3,6 @@ package org.example.proteinstructure.ui.model
 import org.example.proteinstructure.domain.Protein
 import org.example.proteinstructure.domain.ProteinMethod
 
-/**
- * UI-модель детального экрана структуры белка.
- */
 data class ProteinDetailUi(
     val id: String,
     val name: String,

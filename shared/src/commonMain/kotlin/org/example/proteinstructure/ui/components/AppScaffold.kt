@@ -21,11 +21,6 @@ import org.example.proteinstructure.resources.ic_arrow_back
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 
-/**
- * Шапка приложения и контейнер содержимого.
- *
- * Все цвета строго токенизированы через MaterialTheme.
- */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AppScaffold(

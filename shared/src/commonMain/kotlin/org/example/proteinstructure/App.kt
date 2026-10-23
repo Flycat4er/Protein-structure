@@ -25,7 +25,6 @@ import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun App() {
-    // Тема и сессия живут в памяти сессии (без сохранения на диск, согласно ограничениям В1):
     var darkTheme by remember { mutableStateOf(false) }
 
     AppTheme(darkTheme = darkTheme) {

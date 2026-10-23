@@ -5,10 +5,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import org.example.proteinstructure.Screen
 
-/**
- * Управление бэкстеком Navigation 3.
- * Бэкстек представляет собой реактивный список объектов-маршрутов Screen.
- */
 class Navigator {
     private val _navStack: MutableStateFlow<List<Screen>> = MutableStateFlow(listOf(Screen.List))
     val navStack = _navStack.asStateFlow()

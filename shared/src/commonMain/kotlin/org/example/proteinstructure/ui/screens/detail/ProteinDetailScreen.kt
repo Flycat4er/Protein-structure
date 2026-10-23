@@ -43,9 +43,6 @@ import org.example.proteinstructure.ui.model.ProteinDetailUi
 import org.example.proteinstructure.ui.screens.list.ProteinCard
 import org.jetbrains.compose.resources.stringResource
 
-/**
- * Чистая Stateless-функция детального экрана структуры белка.
- */
 @Composable
 fun ProteinDetailScreen(
     protein: ProteinDetailUi,

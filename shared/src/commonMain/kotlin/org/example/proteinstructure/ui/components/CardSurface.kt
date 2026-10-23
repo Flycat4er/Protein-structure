@@ -8,12 +8,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-/**
- * Подложка под карточку списка: скругление, отступы и цвет из MaterialTheme токенов.
- *
- * Ни одного жестко закодированного цвета в поверхностях:
- * всё берётся из MaterialTheme.colorScheme.surfaceContainer.
- */
 @Composable
 fun CardSurface(
     modifier: Modifier = Modifier,

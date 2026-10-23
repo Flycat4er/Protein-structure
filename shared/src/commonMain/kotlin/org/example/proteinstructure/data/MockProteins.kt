@@ -3,15 +3,6 @@ package org.example.proteinstructure.data
 import org.example.proteinstructure.domain.Protein
 import org.example.proteinstructure.domain.ProteinMethod
 
-/**
- * Моки первой вехи: 22 реальные структуры из каталога RCSB Protein Data Bank.
- *
- * Поля полностью соответствуют схеме API (rcsbsearch/v2/query и data.rcsb.org),
- * поэтому в вехе В2 моки заменяются репозиторием с сетью без изменения остального кода.
- *
- * Англоязычные научные названия и классификации оставлены сознательно,
- * так как данные RCSB PDB публикуются глобально на английском языке.
- */
 val mockProteins: List<Protein> = listOf(
     Protein(
         id = "4HHB",

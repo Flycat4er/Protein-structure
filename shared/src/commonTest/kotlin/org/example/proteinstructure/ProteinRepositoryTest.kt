@@ -68,7 +68,6 @@ class ProteinRepositoryTest {
         navigator.back()
         assertEquals(listOf(Screen.List), navigator.navStack.value)
 
-        // Повторный back не должен очищать корневой экран:
         navigator.back()
         assertEquals(listOf(Screen.List), navigator.navStack.value)
     }

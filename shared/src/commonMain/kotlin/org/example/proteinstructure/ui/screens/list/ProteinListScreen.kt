@@ -27,12 +27,6 @@ import org.example.proteinstructure.resources.empty_search_title
 import org.example.proteinstructure.resources.search_hint
 import org.jetbrains.compose.resources.stringResource
 
-/**
- * Чистая Stateless-функция экрана списка белков.
- *
- * Принимает только состояние ProteinListState и лямбду намерения onIntent,
- * что гарантирует стабильность (skippable & restartable) для Compose-компилятора.
- */
 @Composable
 fun ProteinListScreen(
     state: ProteinListState,

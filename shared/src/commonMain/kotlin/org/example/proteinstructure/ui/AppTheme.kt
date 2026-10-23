@@ -40,10 +40,6 @@ private val DarkColors = darkColorScheme(
     outlineVariant = Color(0xFF41474D),
 )
 
-/**
- * Тема приложения. Цвета поверхностей и текста объявляются исключительно через
- * MaterialTheme.colorScheme, чтобы переключение темы динамически обновляло все компоненты.
- */
 @Composable
 fun AppTheme(darkTheme: Boolean, content: @Composable () -> Unit) {
     MaterialTheme(
